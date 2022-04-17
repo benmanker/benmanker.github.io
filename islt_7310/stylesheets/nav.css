@@ -1,4 +1,4 @@
-.nav {
+nav {
   list-style: none;
   background-color: #595959;
   padding: 10px 0 10px 0;
@@ -8,7 +8,6 @@
 .nav>li {
   display: inline-block;
   padding: 0 25px 0 25px;
-  
 }
 
 .nav li a {
@@ -16,7 +15,7 @@
   color: #ffffff;
 }
 
-.nav>ul>li>ul {
+nav>ul>li>ul {
   position: absolute;
   padding: 20px 60px 5px 15px;
   background-color: #595959;
@@ -24,12 +23,12 @@
   list-style: none;
   }
 
-  .nav>ul>li>ul>li {
+  nav>ul>li>ul>li {
     padding-bottom: 10px;
     }
   
   /*special hover to display the drop-down*/
-  .nav>ul>li:hover>ul{
+  nav>ul>li:hover>ul{
   display:block;
   }
 
