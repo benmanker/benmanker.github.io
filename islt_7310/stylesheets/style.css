@@ -9,12 +9,12 @@
 }
 
 h1 {
-  color: #000099;
+  color: #05050c;
 }
 
-.paragraphs>p::first-letter {
-    font-size: 130%;
-    font-weight: 700;
+.paragraphs > p::first-letter {
+  font-size: 130%;
+  font-weight: 700;
 }
 
 .indent {
