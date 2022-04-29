@@ -3,46 +3,82 @@
   Date: Thu Apr 7 2022
 */
 
+/* Font import: */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 * {
   padding: 0;
   margin: 0;
 }
 
-h1 {
-  color: #05050c;
+/* Page Main */
+main {
+  /* display: flex; */
+  align-items: center;
+  display: block;
 }
 
-.paragraphs > p::first-letter {
+/* Page Title */
+main h1 {
+  width: 100%;
+  margin: 30px 0 0 0;
+  color: #05050c;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+/* Page Images */
+main img {
+  margin: auto;
+  width: 50%;
+  max-width: 200px;
+}
+
+/* Page Subheading */
+main h3 {
+  margin: 30px 0 0 0;
+  padding: 0 10%;
+}
+
+/* Page Paragraphs */
+main p {
+  margin: 30px 0 0 0;
+  padding: 0 10%;
+  text-indent: 30px;
+}
+main p::first-letter {
   font-size: 130%;
   font-weight: 700;
 }
 
-.indent {
-  text-indent: 30px;
-}
-
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
   main {
     /* display: flex; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
   }
-  h1 {
+  /* h1 {
     width: 100%;
     text-align: center;
-    justify-content: center;
+
     margin-top: 30px;
-  }
+  } */
   img {
-    width: 200px;
-    padding-right: 50px;
+    /* padding-right: 50px; */
 
     /* justify-content: center; */
   }
-  .paragraphs {
-    display: inline-block;
+  main p {
+    /* display: inline-block; */
+    flex-direction: column;
   }
-  .photo {
-    float: left;
-    display: inline-block;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+  main {
+    margin: 25mm 25mm 25mm 25mm;
   }
 }
