@@ -55,6 +55,14 @@ footer {
   background-image: url("clouds.png");
 }
 
+footer > img {
+  width: 10px;
+}
+
+footer > img:hover {
+  width: 30px;
+}
+
 @media only screen and (max-width: 800px) {
   main {
     /* display: flex; */
