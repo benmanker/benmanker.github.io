@@ -51,6 +51,12 @@ main p::first-letter {
   font-weight: 700;
 }
 
+iframe {
+  margin: 50px auto;
+  width: 800px;
+  height: 400px;
+}
+
 footer {
   background-image: url("clouds.png");
   margin-top: 200px;
