@@ -6,7 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/nav.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li>
+          <a href="projects.html">Projects</a>
+          <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  <body>
+      <main class="main--contact">
+            <h1>Contact Me</h1>
+            <h3>Message Form</h3>
+            <form action=”mailto:benmanker@gmail.com?subject=Portfolio/Professional-Website-Contact" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" value=""required><br>
+                <label for="message">Message:</label><br>
+                <input type="text" id="message" name="message" value="" placeholder="enter message here..."required><br>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+      </main>
+      
+  </body>
   <footer>
     <img src="./assets/email-icon.png" alt="" />
     <p>benmanker@gmail.com</p>
