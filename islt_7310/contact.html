@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/nav.css" />
@@ -38,29 +30,28 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  <body>
-      <main class="main--contact">
-            <h1>Contact Me</h1>
-            <h3>Message Form</h3>
-            <form action=”mailto:benmanker@gmail.com?subject=Portfolio/Professional-Website-Contact" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="" required><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value=""required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" value=""required><br>
-                <label for="message">Message:</label><br>
-                <input type="text" id="message" name="message" value="" placeholder="enter message here..."required><br>
-                <br>
-                <input type="submit" value="Submit">
-              </form>
-      </main>
-      
+
+    <main class="main--contact">
+        <h1>Contact Me</h1>
+        <h3>Message Form</h3>
+        <form action=”mailto:benmanker@gmail.com method=POST enctype=multipart/form-data name=”EmailForm”>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value="" required><br>
+            <label for="message">Message:</label><br>
+            <input type="text" id="message" name="message" value="" placeholder="enter message here..." required><br>
+            <br>
+            <input type="submit" value="Submit">
+            </form>
+    </main>
+    <footer>
+        <img src="./assets/email-icon.png" alt="" />
+        <p>benmanker@gmail.com</p>
+        <img src="./assets/phone-icon.png" alt="" />
+        <p>(123) 456-7890</p>
+      </footer>
   </body>
-  <footer>
-    <img src="./assets/email-icon.png" alt="" />
-    <p>benmanker@gmail.com</p>
-    <img src="./assets/phone-icon.png" alt="" />
-    <p>(123) 456-7890</p>
-  </footer>
 </html>
