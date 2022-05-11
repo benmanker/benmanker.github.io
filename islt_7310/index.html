@@ -19,6 +19,31 @@ Tested: Apr 16, 2022; Passed on Firefox, Chrome, and Safari browsers.
       type="image/x-icon"
       href="./assets/favicon_io/apple-touch-icon.png"
     />
+    <script>
+      function increment() {
+        var btn = document.getElementById("counterButton");
+        btnVal = parseInt(btn.innerHTML);
+        if (isNaN(btnVal)) {
+          btn.innerHTML = 1;
+        } else {
+          btnVal++;
+          btn.innerHTML = btnVal;
+        }
+      }
+    </script>
+    <style>
+      #counterButton:hover {
+        cursor: grab;
+      }
+      #counterButton {
+        width: 100px;
+        margin: 20px 0 0 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -37,7 +62,7 @@ Tested: Apr 16, 2022; Passed on Firefox, Chrome, and Safari browsers.
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
+    <button id="counterButton" onClick="increment()">Click Me</button>
     <main class="main--home">
       <h1>Home</h1>
       <h3>Welcome to my Portfolio Site! Feel free to take a look around!</h3>
